@@ -21,10 +21,12 @@ const User = db.define("users", {
   password: {
     type: DataTypes.STRING,
     allowNull: false,
+    unique: true,
   },
   status: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: true,
   },
   role: {
     allowNull: false,

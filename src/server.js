@@ -21,5 +21,7 @@ const PORT = process.env.PORT || 8080;
 
 // == Aqui escuchamos nuestro puerto y lo mostramos por consola ☠️ //
 app.listen(PORT, () => {
-  console.log(` 🦊 App running on port ${PORT} 🍔 `.bgGreen.black);
+  console.log(
+    ` 🦊 App running on port ${PORT} 🍔 `.bgGreen.black
+  );
 });
